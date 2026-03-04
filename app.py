@@ -19,7 +19,7 @@ load_dotenv()
 def create_app():
     app = Flask(__name__)
 
-    CORS(app, supports_credentials=True, origins=["http://localhost:4200"])
+    CORS(app, supports_credentials=True, origins=["http://localhost:4200", "https://ctims-frontend-james-hsbeddbed4ced8cv.uksouth-01.azurewebsites.net"])
     app.config['SESSION_COOKIE_SAMESITE'] = 'None' 
     app.config['SESSION_COOKIE_SECURE'] = True
 
